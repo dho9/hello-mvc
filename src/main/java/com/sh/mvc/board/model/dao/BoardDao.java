@@ -52,6 +52,6 @@ public class BoardDao {
 		Date regDate = rset.getDate("reg_date");
 		int attachment =rset.getInt("original_filename");
 
-		return new Board(no, title, writer, content, readCount, regDate,attachment);
+		return new Board(no, title, writer, content, readCount, regDate, attachment);
 	}
 }

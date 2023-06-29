@@ -4,7 +4,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/header.jsp" %>
 <%
-	List<Board> boardList = (List<Board>)session.getAttribute("boardList");
+	List<Board> boardList = (List<Board>)request.getAttribute("boardList");
 	System.out.println(boardList);
 
 %>

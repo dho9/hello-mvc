@@ -29,8 +29,7 @@ public class BoardListSrevlet extends HttpServlet {
 		//2 업무로직
 		List<Board> boards = boardService.findPostAll();
 		// 3응답처리
-		HttpSession session = request.getSession(); 
-		session.setAttribute("boardList",boards);
+		request.setAttribute("boardList",boards);
 		request.getRequestDispatcher("/WEB-INF/views/board/boardList.jsp").forward(request, response);
 	}
 
